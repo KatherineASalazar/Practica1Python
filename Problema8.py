@@ -7,7 +7,7 @@
 # las 7:59 o las 8:00, o en cualquier momento intermedio, es hora de desayunar
 
 # Solicitar al usuario una hora en formato de 24 horas
-hora_usuario = input("Ingrese la hora en formato de 24 horas (por ejemplo, 07:30): ")
+hora_usuario = input("Ingrese la hora en formato de 24 horas (por ejemplo 07:30): ")
 
 # Extraer la hora y los minutos de la entrada del usuario
 hora, minutos = map(int, hora_usuario.split(':'))
@@ -19,5 +19,3 @@ elif 12 <= hora <= 13 and 0 <= minutos <= 59:
     print("Es la hora del almuerzo.")
 elif 18 <= hora <= 19 and 0 <= minutos <= 59:
     print("Es la hora de la cena.")
-else:
-    print("No es hora de comer.")

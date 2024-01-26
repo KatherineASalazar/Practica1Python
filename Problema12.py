@@ -32,4 +32,4 @@ nombre_archivo = input("Ingrese el nombre del archivo: ")
 
 # Obtener y mostrar el tipo MIME correspondiente
 tipo_mime = obtener_tipo_mime(nombre_archivo)
-print("El tipo MIME del archivo {} es: {}".format(nombre_archivo, tipo_mime))
+print(format(nombre_archivo, tipo_mime))

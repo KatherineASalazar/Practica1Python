@@ -9,9 +9,8 @@ lista_muestra = ['Rojo', 'Verde', 'Blanco', 'Negro', 'Rosa', 'Amarillo']
 # Eliminar los elementos en las posiciones 0, 4 y 5
 posiciones_a_eliminar = [0, 4, 5]
 
-for posicion in sorted(posiciones_a_eliminar, reverse=True):
-    if 0 <= posicion < len(lista_muestra):
-        lista_muestra.pop(posicion)
+# Crear una nueva lista sin los elementos en las posiciones especificadas
+lista_resultado = [valor for i, valor in enumerate(lista_muestra) if i not in posiciones_a_eliminar]
 
 # Mostrar el resultado esperado
-print("Resultado esperado:", lista_muestra)
+print(lista_resultado)

@@ -5,7 +5,7 @@
 # Definir la lista original
 lista_original = ['Di', 'buen', 'día', 'a', 'papa']
 
-# Crear una copia invertida de la lista original utilizando slicing
+# Crear una copia invertida de la lista original
 lista_invertida = lista_original[::-1]
 
 # Mostrar la lista invertida
